@@ -1,0 +1,63 @@
+.parent{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+    height: 62px;
+}
+header>img:nth-of-type(1){
+    float: left;
+    margin: 13px 0 0 25px;
+}
+header>div{
+    width: 95px;
+    margin: 7px 0 5px 66px;
+    float: left;
+}
+header .nav>li{
+    width: 31px;
+    float: left;
+}
+header .nav>li>a{
+    display: block;
+    height: 16px;
+    color: #ff5700;
+    font-size: 8px;
+    text-align: center;
+    line-height: 16px;
+}
+header .nav>li:nth-of-type(1)>a{
+    background-color: #ff5700;
+    color: #fff;
+}
+header .nav>li>a:hover{
+    background-color: #ffeee5;
+}
+/* header .nav>li>a:active{
+    background-color: #ff5700;
+    color: #fff;
+} */
+header input{
+    width: 315px;
+    height: 25px;
+    border: 1px #ff5700 solid;
+    font-size: 8px;
+}
+header>div #searchinput{
+    position: relative;
+}
+header button{
+    width: 77px;
+    height: 25px;
+    background-color: #ff4202;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 315px;
+} 

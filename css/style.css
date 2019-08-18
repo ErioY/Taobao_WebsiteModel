@@ -1,0 +1,371 @@
+.top .top-container{
+    height: 50px;
+    background-color: #d2d4d8;
+}
+.top .top-container .nav-left{
+    float: left;
+}
+.top .top-container .nav-left>li{
+    float: left;
+    margin-right: 19px;
+}
+.top .top-container .nav-left>li:nth-of-type(1){
+    margin-left: 74px;
+}
+.top .top-container .nav-left>li>select{
+    height: 27x;
+    border: none;
+    background-color: #d2d4d8;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.top .top-container .nav-left>li>a,.top .top-container .nav-right>li>a,.top .top-container .nav-right .show-list .hide-list li>a{
+    display: block;
+    height: 50px;
+    color: #4d555d;
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+
+}
+.top .top-container .nav-left>li .login{
+    color: #f01414;
+}
+.top .top-container .nav-left>li>a:hover,.top .top-container .nav-right>li>a:hover,.top .top-container .nav-right .show-list:hover .hide-list li>a:hover{
+    color: #f01414;
+}
+.top .top-container .nav-right{
+    float: right;
+    margin-right: 75px;
+}
+.top .top-container .nav-right>li{
+    float: left;
+    width: 85px;
+}
+/* 设置顶部导航栏 */
+.top .top-container .nav-right .show-list:hover .icon{
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.top .top-container .nav-right .show-list{
+    position: relative;
+}
+.top .top-container .nav-right .show-list .hide-list{
+	display:none;
+    opacity:0;
+    width: 85px;
+    background-color:#fff;
+    border: 1px solid #cdd0d4;
+    z-index: 4;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.top .top-container .nav-right .show-list:hover .hide-list{
+    display: block;
+    opacity: 1;
+    background-color: #fff;
+    border: 1px #cdd0d4 solid;
+    border-top: none;
+}
+.top .top-container .nav-right .show-list:hover .hide-list li:hover{
+    background-color:#f3f5f7; 
+    
+}
+.top .top-container .nav-right .show-list>a:hover{
+    background-color: #fff;
+    border-left: 1px #cdd0d4 solid;
+    border-right: 1px #cdd0d4 solid;
+}
+header{
+    width:1280px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+}
+header>img:nth-of-type(1){
+    width: 140px;
+    height: 60px;
+    margin: 15px 0 0 80px;
+}
+header>input{
+    width: 670px;
+    height: 50px;
+    border: 1px #f01414 solid;
+    border-radius: 40px 0 0 40px;
+    margin: 10px 0 0 100px;
+}
+header>button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: #ff6900;
+    border-radius: 0 40px 40px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "黑体";
+    text-align: center;
+    margin-left: -4px;
+    cursor: pointer;
+}
+header .menu{
+    width: 650px;
+    border: 1px #f01414 solid;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 344px;
+    display: none;
+    opacity: 0;
+    z-index: 4;
+}
+header .menu:actived{
+    display: block;
+    opacity: 1;
+}
+header .menu>li{
+    width: 100%; 
+}
+header .menu>li>a{
+    display: block;
+    height: 22px;
+    color: #697076;
+    font-size: 15px;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+}
+header .menu>li:nth-of-type(1)>a{
+    margin-top: 6px;
+}
+header .menu>li>a:hover{
+    background-color: #f3f5f7;
+}
+/* 中间部分的背景颜色 */
+section{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+section .parent{
+    width: 1150px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+section .middle-left{
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+}
+section .middle-left>a{
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color:#ff0000;
+    color: #fff;
+    font-size: 13px;
+    line-height: 45px;
+}
+section .middle-left .shoping-list{
+    border-bottom: 1px #e0001f solid;
+}
+section .middle-left .shoping-list .select>a{
+    display: block;
+    height: 35px;
+    background-color: #e0001f;
+    color: #fff;
+    font-size: 13px;
+    line-height: 35px;
+}
+section .middle-left .shoping-list .select>a:hover{
+    background-color: #fff;
+    color: #e0001f;
+}
+section .middle-left .shoping-list .select>a>span{
+    display: block;
+    width: 13px;
+    height: 35px;
+    color: #fff;
+    float: right;
+    padding-right: 20px;
+}
+section .middle-left .shoping-list .select>a:hover span,.service>li>a:hover{
+    color: #e0001f;
+}
+.section-middle-right{
+    width: 890px;
+    float: right;
+}
+.section-menu{
+    width: 800px;
+    height: 45px;
+    margin: 0 auto;
+    line-height: 45px;
+    font-weight: bold;
+    background-image: linear-gradient(to right,#0f0,#7fff00,#7cfc00,#adff2f,#ffd700,#ff0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.section-menu li{
+    padding: 0 8px;
+    float: left;
+}
+.section-menu .left{
+    font-size: 18px;
+}
+.content-left{
+    float: left;
+}
+.content-right{
+    width: 230px;
+    background-color: #fff;
+    border: 1px #fff solid;
+    float: right;
+}
+.content-right .news{
+    width: 100%;
+    height: 220px;
+    background-color: #e3e4e5;
+}
+.news-head{
+    height: 50px;
+    margin: 0 20px;
+}
+.news-head h4{
+    display: block;
+    font-size: 16px;
+    color: #f01414;
+    line-height: 50px;
+    float: left;
+}
+.news-head>a{
+    font-size: 10px;
+    color: #4d555d;
+    float: right;
+    margin-top: 17px; 
+}
+.news-body>a{
+    display: block;
+    font-size: 10px;
+    color: #4d555d;
+    padding-bottom: 15px;
+    margin: 0 20px;
+}
+.news-head>a:hover,.news-body>a:hover{
+    color: #f01414;
+}
+ul.service{
+    width: 230px;
+    border-right: none;
+}
+.service>li{
+    width: 57.5px;
+    float: left;
+}
+.service>li>a{
+    display: block;
+    height: 57.5px;
+    background-color: #e3e4e5;
+    margin: 1px 1px 0 0;
+    color: #4d555d;
+    font-size: 8px;
+    text-align: center;
+    line-height: 85px;
+    position: relative;
+}
+.service>li>a>img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 17px;
+}
+.container-img>a>img{
+    width: 650px;
+    height: 498px;
+}
+.content-right>img:nth-last-of-type(1){
+    width: 100%;
+}
+.shoping-list-hidden{
+    width: 670px;
+    background-color: #d8dadd;
+    position: absolute;
+    top: 45px;
+    left: 250px;
+    display: none;
+    opacity: 0;
+}
+.shoping-list-hidden li:nth-last-of-type(1){
+    margin-bottom: 25px;
+}
+.shoping-list-hidden li span{
+    display: block;
+    width: 120px;
+    height: 21px;
+    font-size: 15px;
+    font-family: "黑体";
+    font-weight: bold;
+    text-align: right;
+    margin-right: 25px;
+    float: left;
+}
+.shoping-list-hidden li a{
+    display: block;
+    font-size: 13px;
+    color: #626971;
+    margin-right: 13px;
+    float: left;
+}
+.shoping-list-hidden li a:hover{
+    color: #f01414;
+}
+.select:nth-of-type(1):hover .shoping-list-hidden,.select:nth-of-type(2):hover .shoping-list-hidden,.select:nth-of-type(3):hover .shoping-list-hidden,.select:nth-of-type(4):hover .shoping-list-hidden,.select:nth-of-type(5):hover .shoping-list-hidden,.select:nth-of-type(6):hover .shoping-list-hidden,.select:nth-of-type(7):hover .shoping-list-hidden,.select:nth-of-type(8):hover .shoping-list-hidden,.select:nth-of-type(9):hover .shoping-list-hidden,.select:nth-of-type(10):hover .shoping-list-hidden,.select:nth-of-type(11):hover .shoping-list-hidden,.select:nth-of-type(12):hover .shoping-list-hidden,.select:nth-of-type(11):hover .shoping-list-hidden,.select:nth-of-type(13):hover .shoping-list-hidden,.select:nth-of-type(11):hover .shoping-list-hidden,.select:nth-of-type(14):hover .shoping-list-hidden{
+    display: block;
+    opacity: 1;
+}
